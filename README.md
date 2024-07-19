@@ -1,4 +1,6 @@
 [![Static Badge](https://img.shields.io/badge/Godot%20Engine-4.3-blue?style=plastic&logo=godotengine)](https://godotengine.org/)
+![GitHub top language](https://img.shields.io/github/languages/top/dragonforge-dev/dungeon-delvers?logo=godotengine)
+
 
 # Dungeon Delvers #
 A rogue-like 3D RPG.
