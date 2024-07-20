@@ -16,5 +16,16 @@ config/icon="res://icon.svg"
 
 [editor]
 
+movie_writer/movie_file="C:/Users/Doug/Projects/dungeon-delvers/level1.avi"
 version_control/plugin_name="GitPlugin"
 version_control/autoload_on_startup=true
+
+[importer_defaults]
+
+oggvorbisstr={
+"bar_beats": 4,
+"beat_count": 0,
+"bpm": 0,
+"loop": true,
+"loop_offset": 0
+}
