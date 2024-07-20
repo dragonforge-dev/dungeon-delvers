@@ -3,7 +3,7 @@
 
 
 # Dungeon Delvers #
-A rogue-like 3D RPG.
+A 3D RPG using Godot.
 
 # Assets #
 The following assets were used in the making of this game.
