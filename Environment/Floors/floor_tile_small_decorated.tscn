@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://p2li6t6e07q3"]
-
-[ext_resource type="PackedScene" uid="uid://d1ohxw1d5kjnk" path="res://Assets/3D/Dungeon/floor_tile_small_decorated.gltf" id="1_wrof5"]
-
-[node name="floor_tile_small_decorated" instance=ExtResource("1_wrof5")]

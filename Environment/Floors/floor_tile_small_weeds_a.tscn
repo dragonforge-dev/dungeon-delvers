@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://blvqjl0vnraof"]
-
-[ext_resource type="PackedScene" uid="uid://n2k5ox8oaclj" path="res://Assets/3D/Dungeon/floor_tile_small_weeds_A.gltf" id="1_744fm"]
-
-[node name="floor_tile_small_weeds_A" instance=ExtResource("1_744fm")]
