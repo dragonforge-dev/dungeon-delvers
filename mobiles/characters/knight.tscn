@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://c2oj6kdl327aq"]
 
-[ext_resource type="PackedScene" uid="uid://cr2e03vcnbwoe" path="res://assets/materials/characters/Knight.glb" id="1_mh3hd"]
+[ext_resource type="PackedScene" uid="uid://cr2e03vcnbwoe" path="res://assets/models/characters/Knight.glb" id="1_mh3hd"]
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_3b7fj"]
 
