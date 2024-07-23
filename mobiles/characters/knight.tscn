@@ -1,0 +1,72 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2oj6kdl327aq"]
+
+[ext_resource type="PackedScene" uid="uid://cr2e03vcnbwoe" path="res://assets/materials/characters/Knight.glb" id="1_mh3hd"]
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_3b7fj"]
+
+[node name="Knight" instance=ExtResource("1_mh3hd")]
+
+[node name="Skeleton3D" parent="Rig" index="0"]
+bones/4/rotation = Quaternion(-0.514121, -0.485468, -0.485468, 0.514122)
+bones/5/rotation = Quaternion(1.64805e-09, -5.95036e-08, -0.0552855, 0.998471)
+bones/8/rotation = Quaternion(1.60975e-09, 1.60975e-09, -0.707107, 0.707107)
+bones/14/rotation = Quaternion(-0.514121, 0.485468, 0.485468, 0.514122)
+bones/15/rotation = Quaternion(1.64805e-09, 5.95036e-08, 0.0552855, 0.998471)
+bones/18/rotation = Quaternion(1.60973e-09, -1.60973e-09, 0.707107, 0.707107)
+bones/24/rotation = Quaternion(0.999849, -7.13276e-08, -1.20427e-08, 0.0173732)
+bones/25/rotation = Quaternion(0.106225, 6.86528e-08, -7.37699e-08, 0.994342)
+bones/26/rotation = Quaternion(-0.455239, 1.61971e-08, -3.43568e-08, 0.890369)
+bones/28/rotation = Quaternion(0.999849, 7.42656e-08, -3.17263e-08, 0.0173732)
+bones/29/rotation = Quaternion(0.106225, -6.86529e-08, 7.37699e-08, 0.994342)
+bones/31/rotation = Quaternion(3.04791e-08, 0.920355, -0.391084, -6.94849e-08)
+bones/32/rotation = Quaternion(0.707107, -2.29302e-07, -4.60552e-08, 0.707107)
+bones/35/rotation = Quaternion(-1.04035e-07, 0.391084, 0.920355, -2.9526e-08)
+bones/39/rotation = Quaternion(0.707107, -3.82385e-08, 1.45009e-07, 0.707107)
+bones/40/rotation = Quaternion(-0.707107, -7.05285e-08, -7.05285e-08, 0.707107)
+bones/42/rotation = Quaternion(-1.04035e-07, 0.391084, 0.920355, -2.95261e-08)
+bones/49/rotation = Quaternion(0.5, -0.5, -0.5, -0.5)
+
+[node name="1H_Sword_Offhand_Bone" parent="Rig/Skeleton3D" index="0"]
+transform = Transform3D(-0.999999, -2.25331e-07, -6.73117e-08, -7.76492e-08, -4.978e-07, 0.999999, -2.14159e-07, 0.999999, 5.0424e-07, 0.883132, 1.04926, 0.0170111)
+
+[node name="Badge_Shield_Bone" parent="Rig/Skeleton3D" index="1"]
+transform = Transform3D(-0.999999, 2.30985e-06, -7.34774e-07, -7.45113e-07, -7.04431e-07, 0.999999, 2.32102e-06, 0.999999, 7.10872e-07, 0.883132, 1.20515, 0.0170112)
+
+[node name="Rectangle_Shield_Bone" parent="Rig/Skeleton3D" index="2"]
+transform = Transform3D(-0.999999, 2.30985e-06, -7.34774e-07, -7.45113e-07, -7.04431e-07, 0.999999, 2.32102e-06, 0.999999, 7.10872e-07, 0.883132, 1.20515, 0.0170112)
+
+[node name="Round_Shield_Bone" parent="Rig/Skeleton3D" index="3"]
+transform = Transform3D(-0.999999, 2.30985e-06, -7.34774e-07, -7.45113e-07, -7.04431e-07, 0.999999, 2.32102e-06, 0.999999, 7.10872e-07, 0.883132, 1.20515, 0.0170112)
+
+[node name="Round_Shield" parent="Rig/Skeleton3D/Round_Shield_Bone" index="0"]
+visible = true
+
+[node name="Spike_Shield_Bone" parent="Rig/Skeleton3D" index="4"]
+transform = Transform3D(-0.999999, 2.30985e-06, -7.34774e-07, -7.45113e-07, -7.04431e-07, 0.999999, 2.32102e-06, 0.999999, 7.10872e-07, 0.883132, 1.20515, 0.0170112)
+
+[node name="1H_Sword_Bone" parent="Rig/Skeleton3D" index="5"]
+transform = Transform3D(0.999999, 3.4454e-07, -3.93153e-07, -3.96661e-07, -7.35878e-07, -0.999999, -3.33368e-07, 0.999999, -7.42514e-07, -0.883132, 1.04926, 0.0333087)
+
+[node name="1H_Sword" parent="Rig/Skeleton3D/1H_Sword_Bone" index="0"]
+visible = true
+
+[node name="2H_Sword_Bone" parent="Rig/Skeleton3D" index="6"]
+transform = Transform3D(0.999999, 3.29807e-07, -3.79467e-07, -3.82975e-07, -7.35878e-07, -0.999999, -3.18635e-07, 0.999999, -7.42514e-07, -0.883132, 1.04926, 0.0333087)
+
+[node name="Knight_Helmet_Bone" parent="Rig/Skeleton3D" index="7"]
+transform = Transform3D(1, -2.20965e-22, 1.69407e-21, 2.20965e-22, 1, 0, -1.69407e-21, 0, 1, 4.76837e-07, 1.21589, -1.08542e-07)
+
+[node name="Knight_Cape_Bone" parent="Rig/Skeleton3D" index="8"]
+transform = Transform3D(1, 1.25214e-21, 0, -1.25214e-21, 1, 0, 0, 0, 1, 0, 1.21589, -1.4066e-07)
+
+[node name="AnimationTree" type="AnimationTree" parent="." index="2"]
+tree_root = SubResource("AnimationNodeStateMachine_3b7fj")
+parameters/current_length = 0.0
+parameters/current_position = 0.0
+parameters/current_delta = 0.0
+parameters/End/current_length = null
+parameters/End/current_position = null
+parameters/End/current_delta = null
+parameters/Start/current_length = 0.0
+parameters/Start/current_position = 0.0
+parameters/Start/current_delta = 0.0
