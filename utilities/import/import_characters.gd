@@ -27,8 +27,10 @@ func iterate(node):
 			node.name = node.name + "_Bone"
 		# We want to hide everything in the character's hands, and everything they are wearing that is removeable.
 		if node is MeshInstance3D and node.get_parent() is  BoneAttachment3D:
-				node.set_visible(false)
-				print_rich("Post-import: [b]Visibile [color=green]%s[/color] [color=yellow]%s[/color][/b] -> [color=yellow][b]%s[/b][/color]" % [node.get_class(), node.name, get_color_string(node.visible)])
+			node.set_visible(false)
+			print_rich("Post-import: [b]Visibile [color=green]%s[/color] [color=yellow]%s[/color][/b] -> [color=yellow][b]%s[/b][/color]" % [node.get_class(), node.name, get_color_string(node.visible)])
+		if node is Skeleton3D:
+			node.rotate_y(-180.0)
 		# Recursively call this function on any child nodes that exist.
 		for child in node.get_children():
 			iterate(child)
