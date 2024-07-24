@@ -15,6 +15,10 @@ func _post_import(scene):
 
 func iterate(node):
 	if node != null:
+		#Characters can't walk through walls.
+		if node is CharacterBody3D:
+			node.set_collision_mask_value(2, true)
+			print_rich("Post-import: [b]Masked [color=green]%s[/color] [color=yellow]%s[/color][/b] -> [color=yellow][b]%s[/b][/color]" % [node.get_class(), "Layer 2", get_color_string(true)])
 		# Add looping animations 
 		if node is AnimationPlayer:
 			for animation_name in node.get_animation_list():
@@ -23,14 +27,16 @@ func iterate(node):
 				print_rich("Post-import: [b]%s[/b] -> [b]%s[/b]" % [animation_name, LOOPMODE[node.get_animation(animation_name).get_loop_mode()]])
 		# Append "_Bone" to BoneAttachment3D nodes just to prevent duplicate names in our scene tree.
 		if node is BoneAttachment3D:
-			print_rich("Post-import: [b]Renamed [color=green]%s[/color] [color=yellow]%s[/color][/b] -> [color=yellow][b]%s[/b][/color]" % [node.get_class(), node.name, node.name + "_Bone"])
 			node.name = node.name + "_Bone"
+			print_rich("Post-import: [b]Renamed [color=green]%s[/color] [color=yellow]%s[/color][/b] -> [color=yellow][b]%s[/b][/color]" % [node.get_class(), node.name, node.name + "_Bone"])
 		# We want to hide everything in the character's hands, and everything they are wearing that is removeable.
 		if node is MeshInstance3D and node.get_parent() is  BoneAttachment3D:
 			node.set_visible(false)
 			print_rich("Post-import: [b]Visibile [color=green]%s[/color] [color=yellow]%s[/color][/b] -> [color=yellow][b]%s[/b][/color]" % [node.get_class(), node.name, get_color_string(node.visible)])
+		# Rotating the model to face the other direction so it moves in the correct direction when animated.
 		if node is Skeleton3D:
-			node.rotate_y(-180.0)
+			node.rotate_y(deg_to_rad(-180.0))
+			print_rich("Post-import: [b]Rotated [color=green]%s[/color] [color=yellow]-180 degrees[/color][/b] on the [b][color=green]y-axis[/color][/b]" % [node.get_class()])
 		# Recursively call this function on any child nodes that exist.
 		for child in node.get_children():
 			iterate(child)
