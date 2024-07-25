@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://do7uqytxl0ml8"]
+
+[ext_resource type="PackedScene" uid="uid://chn3xu6apb17r" path="res://assets/models/dungeon/floor_xl/floor_tile_extralarge_grates.gltf" id="1_vkfo8"]
+[ext_resource type="PackedScene" uid="uid://cskmtcuqrafw8" path="res://assets/models/dungeon/floor_xl/floor_tile_extralarge_grates_open.gltf" id="2_gyq10"]
+
+[node name="FloorMapXL" type="Node3D"]
+
+[node name="floor_tile_extralarge_grates2" parent="." instance=ExtResource("1_vkfo8")]
+
+[node name="floor_tile_extralarge_grates_open2" parent="." instance=ExtResource("2_gyq10")]

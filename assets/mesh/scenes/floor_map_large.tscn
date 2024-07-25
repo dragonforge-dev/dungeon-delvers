@@ -1,0 +1,39 @@
+[gd_scene load_steps=10 format=3 uid="uid://c3wro6yk82fp6"]
+
+[ext_resource type="PackedScene" uid="uid://c2bm8nybybr2q" path="res://assets/models/dungeon/floor_large/floor_tile_big_grate.gltf" id="1_vn8cq"]
+[ext_resource type="PackedScene" uid="uid://dlj8iw4w0esog" path="res://assets/models/dungeon/floor_large/floor_dirt_large.gltf" id="3_o23kt"]
+[ext_resource type="PackedScene" uid="uid://bxkc2ywslwy1s" path="res://assets/models/dungeon/floor_large/floor_dirt_large_rocky.gltf" id="4_xj6l3"]
+[ext_resource type="PackedScene" uid="uid://clufyomjvxvmv" path="res://assets/models/dungeon/floor_large/floor_tile_big_grate_open.gltf" id="5_mxl48"]
+[ext_resource type="PackedScene" uid="uid://uwfo7w8x2vat" path="res://assets/models/dungeon/floor_large/floor_tile_large.gltf" id="6_gvggo"]
+[ext_resource type="PackedScene" uid="uid://0jovputyt0uq" path="res://assets/models/dungeon/floor_large/floor_tile_big_spikes.gltf" id="6_up0pm"]
+[ext_resource type="PackedScene" uid="uid://c85dqh337agoh" path="res://assets/models/dungeon/floor_large/floor_tile_large_rocks.gltf" id="7_q51sc"]
+[ext_resource type="PackedScene" uid="uid://bbepq6pxdbeix" path="res://assets/models/dungeon/floor_large/floor_wood_large.gltf" id="8_adija"]
+[ext_resource type="PackedScene" uid="uid://c57xl02pjwowd" path="res://assets/models/dungeon/floor_large/floor_wood_large_dark.gltf" id="9_lmhjv"]
+
+[node name="FloorMapLarge" type="Node3D"]
+
+[node name="floor_dirt_large2" parent="." instance=ExtResource("3_o23kt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+
+[node name="floor_dirt_large_rocky2" parent="." instance=ExtResource("4_xj6l3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 5)
+
+[node name="floor_tile_big_grate2" parent="." instance=ExtResource("1_vn8cq")]
+
+[node name="floor_tile_big_grate_open2" parent="." instance=ExtResource("5_mxl48")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
+
+[node name="floor_tile_big_spikes2" parent="." instance=ExtResource("6_up0pm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -5)
+
+[node name="floor_tile_large2" parent="." instance=ExtResource("6_gvggo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
+
+[node name="floor_tile_large_rocks2" parent="." instance=ExtResource("7_q51sc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -5)
+
+[node name="floor_wood_large2" parent="." instance=ExtResource("8_adija")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 5)
+
+[node name="floor_wood_large_dark2" parent="." instance=ExtResource("9_lmhjv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)

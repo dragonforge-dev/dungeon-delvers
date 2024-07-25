@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://8hfemtdnoqfi"]
+
+[ext_resource type="MeshLibrary" uid="uid://cf66e35uuhu2d" path="res://assets/mesh/libraries/floor_map_large.meshlib" id="1_jv2el"]
+
+[node name="LargeFloor" type="GridMap"]
+mesh_library = ExtResource("1_jv2el")
+cell_center_x = false
+cell_center_y = false
+cell_center_z = false

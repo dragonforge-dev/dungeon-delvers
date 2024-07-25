@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://gjyqmrxjlkb2"]
-
-[ext_resource type="PackedScene" uid="uid://gojg6b0ugpuj" path="res://assets/models/dungeon/wall_inset_shelves.gltf" id="1_u1bb8"]
-
-[node name="wall_inset_shelves" instance=ExtResource("1_u1bb8")]

@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://dio2o70yvejfo"]
-
-[ext_resource type="PackedScene" uid="uid://cdlatfwpvpeq2" path="res://assets/models/dungeon/wall_inset_candles.gltf" id="1_shacp"]
-
-[node name="wall_inset_candles" instance=ExtResource("1_shacp")]

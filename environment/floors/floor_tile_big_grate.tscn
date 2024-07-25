@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cfgrcq5hhd7m"]
-
-[ext_resource type="PackedScene" uid="uid://c2bm8nybybr2q" path="res://assets/models/dungeon/floor_tile_big_grate.gltf" id="1_ctht5"]
-
-[node name="floor_tile_big_grate" instance=ExtResource("1_ctht5")]

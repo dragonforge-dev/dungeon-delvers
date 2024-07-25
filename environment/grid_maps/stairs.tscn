@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcv5101pvbxq5"]
+
+[ext_resource type="MeshLibrary" uid="uid://hqiqodc2b4ul" path="res://assets/mesh/libraries/stair_map.meshlib" id="1_coni4"]
+
+[node name="Stairs" type="GridMap"]
+mesh_library = ExtResource("1_coni4")
+cell_size = Vector3(0.5, 2, 0.5)
+cell_center_x = false
+cell_center_y = false
+cell_center_z = false

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://daqv41sk0wh2a"]
+
+[ext_resource type="MeshLibrary" uid="uid://gaipaevy8fp0" path="res://assets/mesh/libraries/floor_map_grate.meshlib" id="1_fvecv"]
+
+[node name="Grate" type="GridMap"]
+mesh_library = ExtResource("1_fvecv")
+cell_size = Vector3(1, 2, 1)
+cell_center_x = false
+cell_center_y = false
+cell_center_z = false

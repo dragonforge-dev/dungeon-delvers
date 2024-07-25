@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdphn0ml7h8dk"]
+
+[ext_resource type="PackedScene" uid="uid://db72wnj4cocsj" path="res://assets/models/dungeon/floor_grate/floor_tile_grate.gltf" id="1_kfmo4"]
+[ext_resource type="PackedScene" uid="uid://iuxfsbhn4sw4" path="res://assets/models/dungeon/floor_grate/floor_tile_grate_open.gltf" id="2_0jrmp"]
+
+[node name="FloorMapGrate" type="Node3D"]
+
+[node name="floor_tile_grate2" parent="." instance=ExtResource("1_kfmo4")]
+
+[node name="floor_tile_grate_open2" parent="." instance=ExtResource("2_0jrmp")]

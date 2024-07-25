@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpm58phwvjkau"]
+
+[ext_resource type="MeshLibrary" uid="uid://k33075hil23p" path="res://assets/mesh/libraries/floor_map_small.meshlib" id="1_ie4ft"]
+
+[node name="SmallFloor" type="GridMap"]
+mesh_library = ExtResource("1_ie4ft")
+cell_center_y = false

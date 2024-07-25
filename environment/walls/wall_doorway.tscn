@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bafjwfb8k3gnx"]
-
-[ext_resource type="PackedScene" uid="uid://drbsscerutuam" path="res://assets/models/dungeon/wall_doorway.gltf" id="1_66m06"]
-
-[node name="wall_doorway" instance=ExtResource("1_66m06")]

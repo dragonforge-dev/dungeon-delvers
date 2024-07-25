@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://b3idt5sxqrpex"]
-
-[ext_resource type="PackedScene" uid="uid://ryo01rscwnc6" path="res://assets/models/dungeon/floor_tile_small_broken_A.gltf" id="1_g8il6"]
-
-[node name="floor_tile_small_broken_A" instance=ExtResource("1_g8il6")]

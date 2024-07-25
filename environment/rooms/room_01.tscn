@@ -1,226 +1,33 @@
-[gd_scene load_steps=19 format=3 uid="uid://byskb3t7svrm1"]
+[gd_scene load_steps=6 format=3 uid="uid://c104fwehxlwj4"]
 
-[ext_resource type="PackedScene" uid="uid://cfgrcq5hhd7m" path="res://environment/floors/floor_tile_big_grate.tscn" id="1_7cw5j"]
-[ext_resource type="PackedScene" uid="uid://1pcexnxro6wd" path="res://environment/floors/floor_tile_small_weeds_a.tscn" id="2_v7fbr"]
-[ext_resource type="PackedScene" uid="uid://oig8j78dglxp" path="res://environment/floors/floor_tile_small_broken_b.tscn" id="3_2mc76"]
-[ext_resource type="PackedScene" uid="uid://c22ypxygvriwy" path="res://environment/floors/floor_tile_small.tscn" id="4_3hetw"]
-[ext_resource type="PackedScene" uid="uid://gynw1r5xdvp8" path="res://environment/floors/floor_tile_large.tscn" id="5_5w0eu"]
-[ext_resource type="PackedScene" uid="uid://wp2cvfh4o0no" path="res://environment/walls/wall_cracked.tscn" id="5_xtdfe"]
-[ext_resource type="PackedScene" uid="uid://b3idt5sxqrpex" path="res://environment/floors/floor_tile_small_broken_a.tscn" id="6_uwf3m"]
-[ext_resource type="PackedScene" uid="uid://bafjwfb8k3gnx" path="res://environment/walls/wall_doorway.tscn" id="7_h1y7a"]
-[ext_resource type="PackedScene" uid="uid://c3q0k68qcpg5l" path="res://environment/floors/floor_tile_grate.tscn" id="7_s475v"]
-[ext_resource type="PackedScene" uid="uid://p5718d6ubh3w" path="res://environment/floors/floor_tile_small_decorated.tscn" id="8_epmip"]
-[ext_resource type="PackedScene" uid="uid://clflnnt8njx2p" path="res://environment/walls/wall_shelves.tscn" id="10_esx4g"]
-[ext_resource type="PackedScene" uid="uid://d1mxwowff0qxf" path="res://environment/walls/wall_inset_shelves_decorated_a.tscn" id="11_3boj4"]
-[ext_resource type="PackedScene" uid="uid://dio2o70yvejfo" path="res://environment/walls/wall_inset_candles.tscn" id="11_ff82r"]
-[ext_resource type="PackedScene" uid="uid://4k8xvqtvew5m" path="res://environment/walls/wall_inset.tscn" id="12_xut04"]
-[ext_resource type="PackedScene" uid="uid://ddjfs8dsrs41f" path="res://environment/walls/wall.tscn" id="13_scvep"]
-[ext_resource type="PackedScene" uid="uid://gjyqmrxjlkb2" path="res://environment/walls/wall_inset_shelves.tscn" id="13_w6ocm"]
-[ext_resource type="PackedScene" uid="uid://bqfjq28gedcb1" path="res://environment/walls/wall_corner_small.tscn" id="14_88xc4"]
-[ext_resource type="PackedScene" uid="uid://shu13hpkbfge" path="res://environment/walls/wall_inset_shelves_decorated_b.tscn" id="18_20u2p"]
+[ext_resource type="PackedScene" uid="uid://daqv41sk0wh2a" path="res://environment/grid_maps/grate.tscn" id="1_bxbpc"]
+[ext_resource type="PackedScene" uid="uid://8hfemtdnoqfi" path="res://environment/grid_maps/large_floor.tscn" id="2_xms8r"]
+[ext_resource type="PackedScene" uid="uid://dpm58phwvjkau" path="res://environment/grid_maps/small_floor.tscn" id="3_gr5dk"]
+[ext_resource type="PackedScene" uid="uid://x70vj7dpsq70" path="res://environment/grid_maps/walls.tscn" id="4_f3u24"]
+[ext_resource type="PackedScene" uid="uid://cb37n8t5jc4de" path="res://environment/doors/wall_doorway.tscn" id="5_5s5wr"]
 
 [node name="Room01" type="Node3D"]
 
-[node name="grate_with_weeds" type="Node3D" parent="."]
-metadata/_edit_group_ = true
-
-[node name="floor" type="Node3D" parent="grate_with_weeds"]
-metadata/_edit_group_ = true
-
-[node name="floor_tile_big_grate" parent="grate_with_weeds/floor" instance=ExtResource("1_7cw5j")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4)
-
-[node name="floor_tile_small_weeds_A" parent="grate_with_weeds/floor" instance=ExtResource("2_v7fbr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -7)
-
-[node name="floor_tile_small_broken_B" parent="grate_with_weeds/floor" instance=ExtResource("3_2mc76")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -7, 0, -7)
-
-[node name="floor_tile_small" parent="grate_with_weeds/floor" instance=ExtResource("4_3hetw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -5)
-
-[node name="floor_tile_small2" parent="grate_with_weeds/floor" instance=ExtResource("4_3hetw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -3)
-
-[node name="floor_tile_small3" parent="grate_with_weeds/floor" instance=ExtResource("4_3hetw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -1)
-
-[node name="floor_tile_small4" parent="grate_with_weeds/floor" instance=ExtResource("4_3hetw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -1)
-
-[node name="floor_tile_small5" parent="grate_with_weeds/floor" instance=ExtResource("4_3hetw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -7)
-
-[node name="floor_tile_small6" parent="grate_with_weeds/floor" instance=ExtResource("4_3hetw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -1)
-
-[node name="floor_tile_small7" parent="grate_with_weeds/floor" instance=ExtResource("4_3hetw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -7)
-
-[node name="floor_tile_small8" parent="grate_with_weeds/floor" instance=ExtResource("4_3hetw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -5)
-
-[node name="floor_tile_small9" parent="grate_with_weeds/floor" instance=ExtResource("4_3hetw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -3)
-
-[node name="floor_tile_small10" parent="grate_with_weeds/floor" instance=ExtResource("4_3hetw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1)
-
-[node name="wall" type="Node3D" parent="grate_with_weeds"]
-metadata/_edit_group_ = true
-
-[node name="wall_cracked" parent="grate_with_weeds/wall" instance=ExtResource("5_xtdfe")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -8.5)
-
-[node name="wall" parent="grate_with_weeds/wall" instance=ExtResource("13_scvep")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -8.5)
-
-[node name="wall2" parent="grate_with_weeds/wall" instance=ExtResource("13_scvep")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.5, 0, -6)
-
-[node name="wall_inset" parent="grate_with_weeds/wall" instance=ExtResource("12_xut04")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.5, 0, -2)
-
-[node name="wall_corner_small" parent="grate_with_weeds/wall" instance=ExtResource("14_88xc4")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.5, 0, -8.5)
-
-[node name="library" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
-metadata/_edit_group_ = true
-
-[node name="floor" type="Node3D" parent="library"]
-metadata/_edit_group_ = true
-
-[node name="floor_tile_large" parent="library/floor" instance=ExtResource("5_5w0eu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
-
-[node name="floor_tile_large2" parent="library/floor" instance=ExtResource("5_5w0eu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
-
-[node name="floor_tile_large3" parent="library/floor" instance=ExtResource("5_5w0eu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6)
-
-[node name="floor_tile_large4" parent="library/floor" instance=ExtResource("5_5w0eu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 6)
-
-[node name="wall" type="Node3D" parent="library"]
-metadata/_edit_group_ = true
-
-[node name="wall_shelves" parent="library/wall" instance=ExtResource("10_esx4g")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.5, 0, 2)
-
-[node name="wall_inset_shelves_decoratedA" parent="library/wall" instance=ExtResource("11_3boj4")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.5, 0, 6)
-
-[node name="wall_inset" parent="library/wall" instance=ExtResource("12_xut04")]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 6, 0, 8.5)
-
-[node name="wall" parent="library/wall" instance=ExtResource("13_scvep")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 8.5)
-
-[node name="wall_corner_small" parent="library/wall" instance=ExtResource("14_88xc4")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.5, 0, 8.5)
-
-[node name="entry" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8)
-metadata/_edit_group_ = true
-
-[node name="floor" type="Node3D" parent="entry"]
-metadata/_edit_group_ = true
-
-[node name="floor_tile_large" parent="entry/floor" instance=ExtResource("5_5w0eu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
-
-[node name="floor_tile_large2" parent="entry/floor" instance=ExtResource("5_5w0eu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
-
-[node name="floor_tile_large3" parent="entry/floor" instance=ExtResource("5_5w0eu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6)
-
-[node name="floor_tile_large4" parent="entry/floor" instance=ExtResource("5_5w0eu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 6)
-
-[node name="floor_tile_small8" parent="entry/floor" instance=ExtResource("4_3hetw")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3, 0, -1)
-
-[node name="floor_tile_small9" parent="entry/floor" instance=ExtResource("4_3hetw")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1, 0, -1)
-
-[node name="wall" type="Node3D" parent="entry"]
-metadata/_edit_group_ = true
-
-[node name="wall_doorway" parent="entry/wall" instance=ExtResource("7_h1y7a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -0.5)
-
-[node name="wall" parent="entry/wall" instance=ExtResource("13_scvep")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -0.5)
-
-[node name="wall2" parent="entry/wall" instance=ExtResource("13_scvep")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8.5, 0, 6)
-
-[node name="wall_corner_small" parent="entry/wall" instance=ExtResource("14_88xc4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.5, 0, -0.5)
-
-[node name="wall_inset_shelves" parent="entry/wall" instance=ExtResource("13_w6ocm")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8.5, 0, 2)
-
-[node name="altar" type="Node3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
-metadata/_edit_group_ = true
-
-[node name="floor" type="Node3D" parent="altar"]
-metadata/_edit_group_ = true
-
-[node name="floor_tile_grate" parent="altar/floor" instance=ExtResource("7_s475v")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 5)
-
-[node name="floor_tile_small_decorated" parent="altar/floor" instance=ExtResource("8_epmip")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 7)
-
-[node name="floor_tile_small_decorated2" parent="altar/floor" instance=ExtResource("8_epmip")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7, 0, 3)
-
-[node name="floor_tile_small" parent="altar/floor" instance=ExtResource("4_3hetw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 7)
-
-[node name="floor_tile_small2" parent="altar/floor" instance=ExtResource("4_3hetw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 1)
-
-[node name="floor_tile_small3" parent="altar/floor" instance=ExtResource("4_3hetw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 1)
-
-[node name="floor_tile_small4" parent="altar/floor" instance=ExtResource("4_3hetw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 3)
-
-[node name="floor_tile_small5" parent="altar/floor" instance=ExtResource("4_3hetw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 7)
-
-[node name="floor_tile_small6" parent="altar/floor" instance=ExtResource("4_3hetw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 5)
-
-[node name="floor_tile_small7" parent="altar/floor" instance=ExtResource("4_3hetw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 7)
-
-[node name="floor_tile_large" parent="altar/floor" instance=ExtResource("5_5w0eu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
-
-[node name="floor_tile_small_broken_A" parent="altar/floor" instance=ExtResource("6_uwf3m")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7, 0, 5)
-
-[node name="wall3" type="Node3D" parent="altar"]
-metadata/_edit_group_ = true
-
-[node name="wall_inset_candles" parent="altar/wall3" instance=ExtResource("11_ff82r")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.5, 0, 6)
-
-[node name="wall" parent="altar/wall3" instance=ExtResource("13_scvep")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 8.5)
-
-[node name="wall2" parent="altar/wall3" instance=ExtResource("13_scvep")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.5, 0, 2)
-
-[node name="wall_corner_small" parent="altar/wall3" instance=ExtResource("14_88xc4")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.5, 0, 8.5)
-
-[node name="wall_inset_shelves_decoratedB" parent="altar/wall3" instance=ExtResource("18_20u2p")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2, 0, 8.5)
+[node name="Grate" parent="." instance=ExtResource("1_bxbpc")]
+data = {
+"cells": PackedInt32Array(65531, 65532, 1441792)
+}
+
+[node name="LargeFloor" parent="." instance=ExtResource("2_xms8r")]
+data = {
+"cells": PackedInt32Array(65535, 1, 655365, 65533, 1, 655365, 65533, 3, 655365, 65535, 3, 655365, 1, 65535, 655365, 3, 65535, 655365, 3, 65533, 655365, 1, 65533, 655365, 2, 2, 655362, 65535, 65535, 655365)
+}
+
+[node name="SmallFloor" parent="." instance=ExtResource("3_gr5dk")]
+data = {
+"cells": PackedInt32Array(0, 3, 655362, 0, 2, 655362, 0, 1, 655362, 0, 0, 655362, 1, 0, 655362, 2, 0, 655362, 3, 0, 655362, 65532, 65535, 655360, 65533, 65535, 655360, 65532, 65534, 655360, 65532, 65533, 655360, 65535, 65532, 655360, 65535, 65533, 655360, 65532, 65532, 655363, 65534, 65532, 1048579, 65533, 65532, 1, 65534, 65533, 0, 3, 1, 1441792, 3, 2, 1441792, 1, 3, 1441792, 2, 3, 655364, 3, 3, 1048578, 65535, 4, 655360, 65534, 4, 655360)
+}
+metadata/_editor_floor_ = Vector3(0, 1, 0)
+
+[node name="Walls" parent="." instance=ExtResource("4_f3u24")]
+data = {
+"cells": PackedInt32Array(4, 17, 655360, 65524, 17, 655360, 12, 17, 655370, 17, 12, 1048576, 17, 4, 1441812, 4, 65519, 20, 65524, 65519, 21, 65532, 65519, 0, 12, 65519, 0, 17, 65524, 1441816, 65519, 65532, 1048601, 17, 65532, 1441821, 65519, 12, 1048598, 65519, 65524, 1048576, 65519, 4, 1048576, 65519, 65519, 1048585, 17, 65519, 9, 17, 17, 1441801, 65519, 17, 655369)
+}
+
+[node name="wall_doorway" parent="." instance=ExtResource("5_5s5wr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 8.5)
