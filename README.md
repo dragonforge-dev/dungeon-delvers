@@ -10,5 +10,8 @@ The following assets were used in the making of this game.
 
 ## 3D Models ##
 
+### Characters ###
+[Adventurers Character Pack](https://kaylousberg.itch.io/kaykit-adventurers) by [Kay Lousberg](https://kaylousberg.com/) ([Pateron](https://www.patreon.com/kaylousberg))
+
 ### Environment ###
 [Dungeon Remastered](https://kaylousberg.itch.io/kaykit-dungeon-remastered) by [Kay Lousberg](https://kaylousberg.com/) ([Pateron](https://www.patreon.com/kaylousberg))
