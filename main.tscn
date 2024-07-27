@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://c658a2imd8dx"]
 
 [ext_resource type="PackedScene" uid="uid://c104fwehxlwj4" path="res://environment/rooms/room_01.tscn" id="1_f13ai"]
-[ext_resource type="PackedScene" uid="uid://c2oj6kdl327aq" path="res://mobiles/characters/knight.tscn" id="2_meb71"]
+[ext_resource type="PackedScene" uid="uid://c2oj6kdl327aq" path="res://mobiles/characters/knight.tscn" id="2_7nw02"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_nl378"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -27,4 +27,4 @@ shadow_enabled = true
 
 [node name="Room01" parent="." instance=ExtResource("1_f13ai")]
 
-[node name="Knight" parent="." instance=ExtResource("2_meb71")]
+[node name="Knight" parent="." instance=ExtResource("2_7nw02")]

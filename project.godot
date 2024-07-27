@@ -21,6 +21,10 @@ movie_writer/movie_file="C:/Users/Doug/Projects/dungeon-delvers/level1.avi"
 version_control/plugin_name="GitPlugin"
 version_control/autoload_on_startup=true
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/gdUnit4/plugin.cfg")
+
 [importer_defaults]
 
 oggvorbisstr={

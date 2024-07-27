@@ -5,7 +5,8 @@ enum LoopMode { LOOP_NONE, LOOP_LINEAR, LOOP_PINGPONG }
 const LOOPMODE = ["LOOP_NONE", "[b][color=green]LOOP_LINEAR[/color][/b]", "[b][color=orange]LOOP_PINGPONG[/color][/b]"]
 var scene_name: StringName
 
-# Import Script for characters to set looping animations automatically.
+# Import script for characters to set up everything so no editing is needed once the character is
+# instantiated.
 func _post_import(scene):
 	scene_name = scene.name
 	print_rich("\n[b][color=red]Begin Post-import[/color] -> [color=purple]%s[/color] as [color=green]%s[/color][/b]" % [scene_name, scene.get_class()])
@@ -15,10 +16,15 @@ func _post_import(scene):
 
 func iterate(node):
 	if node != null:
-		#Characters can't walk through walls.
+		# Put the character on the character layer (5) and make sure they can't walk through
+		# walls (2) or destructibles (3), they can pick up loot (4), and they will bump into
+		# other players (5), NPCs (6), and enemies (7).
 		if node is CharacterBody3D:
-			node.set_collision_mask_value(2, true)
-			print_rich("Post-import: [b]Masked [color=green]%s[/color] [color=yellow]%s[/color][/b] -> [color=yellow][b]%s[/b][/color]" % [node.get_class(), "Layer 2", get_color_string(true)])
+			node.set_collision_layer_value(1, false)
+			node.set_collision_layer_value(5, true)
+			for i in range(2,8):
+				node.set_collision_mask_value(i, true)
+				print_rich("Post-import: [b]Masked Layer [color=green]%s[/color] [color=yellow]%s[/color][/b] -> [color=yellow][b]%s[/b][/color]" % [node.get_class(), i, get_color_string(true)])
 		# Add looping animations 
 		if node is AnimationPlayer:
 			for animation_name in node.get_animation_list():
@@ -30,7 +36,7 @@ func iterate(node):
 			node.name = node.name + "_Bone"
 			print_rich("Post-import: [b]Renamed [color=green]%s[/color] [color=yellow]%s[/color][/b] -> [color=yellow][b]%s[/b][/color]" % [node.get_class(), node.name, node.name + "_Bone"])
 		# We want to hide everything in the character's hands, and everything they are wearing that is removeable.
-		if node is MeshInstance3D and node.get_parent() is  BoneAttachment3D:
+		if node is MeshInstance3D and node.get_parent() is BoneAttachment3D:
 			node.set_visible(false)
 			print_rich("Post-import: [b]Visibile [color=green]%s[/color] [color=yellow]%s[/color][/b] -> [color=yellow][b]%s[/b][/color]" % [node.get_class(), node.name, get_color_string(node.visible)])
 		# Rotating the model to face the other direction so it moves in the correct direction when animated.
@@ -41,7 +47,7 @@ func iterate(node):
 		for child in node.get_children():
 			iterate(child)
 
-
+# Return rich text color string for true (green)/red (false).
 func get_color_string(value: bool):
 	if value:
 		return "[color=green]true[/color]"
