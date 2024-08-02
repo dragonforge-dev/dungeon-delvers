@@ -13,6 +13,7 @@ config_version=5
 config/name="Dungeon Delvers"
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
+boot_splash/image="res://assets/images/splash_screen/Dungeon Delvers.png"
 config/icon="res://icon.svg"
 
 [editor]
@@ -24,6 +25,10 @@ version_control/autoload_on_startup=true
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/gdUnit4/plugin.cfg")
+
+[gdunit4]
+
+settings/test/test_suite_naming_convention=1
 
 [importer_defaults]
 
@@ -67,3 +72,6 @@ move_right={
 3d_physics/layer_5="Player"
 3d_physics/layer_6="NPC"
 3d_physics/layer_7="Enemy"
+3d_physics/layer_8="Player Weapon"
+3d_physics/layer_9="NPC Weapon"
+3d_physics/layer_10="Enemy Weapon"

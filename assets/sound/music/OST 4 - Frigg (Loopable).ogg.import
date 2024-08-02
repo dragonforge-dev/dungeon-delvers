@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dhld2rdpf2ak5"
+path="res://.godot/imported/OST 4 - Frigg (Loopable).ogg-724d3fde57d65f6d572f7fea1dd609fb.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sound/music/OST 4 - Frigg (Loopable).ogg"
+dest_files=["res://.godot/imported/OST 4 - Frigg (Loopable).ogg-724d3fde57d65f6d572f7fea1dd609fb.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
