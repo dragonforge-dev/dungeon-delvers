@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://c104fwehxlwj4"]
+[gd_scene load_steps=5 format=3 uid="uid://c104fwehxlwj4"]
 
 [ext_resource type="PackedScene" uid="uid://daqv41sk0wh2a" path="res://environment/grid_maps/grate.tscn" id="1_bxbpc"]
 [ext_resource type="PackedScene" uid="uid://8hfemtdnoqfi" path="res://environment/grid_maps/large_floor.tscn" id="2_xms8r"]
 [ext_resource type="PackedScene" uid="uid://dpm58phwvjkau" path="res://environment/grid_maps/small_floor.tscn" id="3_gr5dk"]
 [ext_resource type="PackedScene" uid="uid://x70vj7dpsq70" path="res://environment/grid_maps/walls.tscn" id="4_f3u24"]
-[ext_resource type="PackedScene" uid="uid://dlqsrrcbv4mk1" path="res://environment/doors/door.tscn" id="5_n0jj2"]
 
 [node name="Room01" type="Node3D"]
 
@@ -28,6 +27,3 @@ metadata/_editor_floor_ = Vector3(0, 0, 0)
 data = {
 "cells": PackedInt32Array(4, 17, 655360, 65524, 17, 655360, 12, 17, 655370, 17, 12, 1048576, 17, 4, 1441812, 4, 65519, 20, 65524, 65519, 21, 65532, 65519, 0, 12, 65519, 0, 17, 65524, 1441816, 65519, 65532, 1048601, 17, 65532, 1441821, 65519, 12, 1048598, 65519, 65524, 1048576, 65519, 4, 1048576, 65519, 65519, 1048585, 17, 65519, 9, 17, 17, 1441801, 65519, 17, 655369, 65532, 17, 37)
 }
-
-[node name="door" parent="." instance=ExtResource("5_n0jj2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5, -1, 11.5)

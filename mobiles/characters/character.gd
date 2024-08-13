@@ -25,14 +25,14 @@ func _physics_process(delta: float) -> void:
 		var destination = navigation_agent_3d.get_next_path_position()
 		var local_destination = destination - global_position
 		direction = local_destination.normalized()
-		rotate_character(destination, delta)
+		rotate_to(destination, delta)
 	if is_player: get_input()
 	
 	#Move the Character
 	velocity = lerp(velocity, direction * speed, acceleration * delta)
 	do_animation()
 	move_and_slide()
-	if velocity.length() > 1.0 and is_player: rotate_character(spring_arm, delta) # If the player is moving, line the player up with the camera
+	if velocity.length() > 1.0 and is_player: rotate_to(spring_arm, delta) # If the player is moving, line the player up with the camera
 
 
 func _unhandled_input(event):
@@ -45,15 +45,12 @@ func _unhandled_input(event):
 
 # Gets input from the player and updates velocity.
 func get_input() -> void:
-	var input_dir := Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
-	update_velocity(input_dir)
+	update_velocity(Input.get_vector("move_left", "move_right", "move_forward", "move_backward"))
 
 
 # Directly updates the velocity. Is used by player input, and can be used
 # to manually move the character for cutscene scripting or unit testing.
 func update_velocity(input_dir: Vector2) -> void:
-	if !navigation_agent_3d.is_navigation_finished():
-		navigation_agent_3d.set_target_position(model.global_position)
 	if is_player:
 		direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).rotated(Vector3.UP, spring_arm.rotation.y)
 	else:
@@ -67,14 +64,14 @@ func update_velocity(input_dir: Vector2) -> void:
 		velocity.z = move_toward(velocity.z, 0, speed)
 
 
-# Gets a blend for the IWR State to play.
+# Gets a blend for the Idle/Walk/Run State to play.
 func do_animation() -> void:
 	var vl = velocity * model.transform.basis
 	anim_tree.set("parameters/IWR/blend_position", Vector2(vl.x, -vl.z) / speed)
 
 
 # Rotates the character towards the rotation of the Node or Vector passed to it.
-func rotate_character(target, delta: float = 0.0167) -> void:
+func rotate_to(target: Variant, delta: float = 0.0167) -> void:
 	if target is SpringArm3D:
 		model.rotation.y = lerp_angle(model.rotation.y, target.rotation.y, rotation_speed * delta)
 		return
@@ -88,7 +85,7 @@ func rotate_character(target, delta: float = 0.0167) -> void:
 
 # Takes either a Vector3 as a location, or a Node from which it extracts the
 # location, and sets it for the NavigationAgent3D.
-func walk_to_target(target) -> void:
+func move_to(target: Variant) -> void:
 	if target is not Vector3:
 		target = target.global_position
 	navigation_agent_3d.set_target_position(target)

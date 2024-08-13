@@ -2,11 +2,11 @@
 
 [ext_resource type="PackedScene" uid="uid://drbsscerutuam" path="res://assets/models/dungeon/walls/wall_doorway.gltf" id="1_ce1b4"]
 [ext_resource type="Script" path="res://environment/doors/door.gd" id="2_8kxy7"]
-[ext_resource type="AudioStream" uid="uid://ig6cl530l45h" path="res://assets/sound/sfx/door_wood_open_01.wav" id="2_q673c"]
-[ext_resource type="AudioStream" uid="uid://bsrbap1jwmpdg" path="res://assets/sound/sfx/door_wood_close_01.wav" id="3_lmsnh"]
-[ext_resource type="AudioStream" uid="uid://u1bmqn2n1mqs" path="res://assets/sound/sfx/lock_03.wav" id="4_mx1k3"]
-[ext_resource type="AudioStream" uid="uid://txqtosbkgao0" path="res://assets/sound/sfx/lock_01.wav" id="5_ammd6"]
-[ext_resource type="AudioStream" uid="uid://4reqcpx8752p" path="res://assets/sound/sfx/lock_04.wav" id="6_6ayjy"]
+[ext_resource type="AudioStream" uid="uid://ig6cl530l45h" path="res://assets/sound/sfx/door_ovani/door_wood_open_01.wav" id="2_q673c"]
+[ext_resource type="AudioStream" uid="uid://bsrbap1jwmpdg" path="res://assets/sound/sfx/door_ovani/door_wood_close_01.wav" id="3_lmsnh"]
+[ext_resource type="AudioStream" uid="uid://u1bmqn2n1mqs" path="res://assets/sound/sfx/door_ovani/locked.wav" id="4_mx1k3"]
+[ext_resource type="AudioStream" uid="uid://txqtosbkgao0" path="res://assets/sound/sfx/door_ovani/unlock.wav" id="5_ammd6"]
+[ext_resource type="AudioStream" uid="uid://4reqcpx8752p" path="res://assets/sound/sfx/door_ovani/lock.wav" id="6_6ayjy"]
 
 [sub_resource type="Animation" id="Animation_vg518"]
 length = 0.001
@@ -175,7 +175,7 @@ tracks/0/keys = {
 }
 tracks/1/type = "audio"
 tracks/1/imported = false
-tracks/1/enabled = true
+tracks/1/enabled = false
 tracks/1/path = NodePath("AudioStreamPlayer3D")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
@@ -211,28 +211,17 @@ tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "clips": [{
-"end_offset": 0.0,
+"end_offset": 0.1,
 "start_offset": 0.0,
 "stream": ExtResource("5_ammd6")
-}],
-"times": PackedFloat32Array(0)
-}
-tracks/1/use_blend = true
-tracks/2/type = "audio"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("AudioStreamPlayer3D")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"clips": [{
+}, {
 "end_offset": 0.0,
 "start_offset": 0.0,
 "stream": ExtResource("2_q673c")
 }],
-"times": PackedFloat32Array(0.3)
+"times": PackedFloat32Array(0, 0.3)
 }
-tracks/2/use_blend = true
+tracks/1/use_blend = true
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_m8pyy"]
 _data = {

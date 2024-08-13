@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://ig6cl530l45h"
-path="res://.godot/imported/door_wood_open_01.wav-e301b65ac85e61aa0eea08acc3a97576.sample"
+path="res://.godot/imported/door_wood_open_01.wav-54d55407a74d014597e320cd49d6082c.sample"
 
 [deps]
 
-source_file="res://assets/sound/sfx/door_wood_open_01.wav"
-dest_files=["res://.godot/imported/door_wood_open_01.wav-e301b65ac85e61aa0eea08acc3a97576.sample"]
+source_file="res://assets/sound/sfx/door_ovani/door_wood_open_01.wav"
+dest_files=["res://.godot/imported/door_wood_open_01.wav-54d55407a74d014597e320cd49d6082c.sample"]
 
 [params]
 

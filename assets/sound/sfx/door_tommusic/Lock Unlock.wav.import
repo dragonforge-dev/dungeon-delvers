@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c4faokiul12xo"
+path="res://.godot/imported/Lock Unlock.wav-146282780a4abfd28f066f863e7d7e55.sample"
+
+[deps]
+
+source_file="res://assets/sound/sfx/door_tommusic/Lock Unlock.wav"
+dest_files=["res://.godot/imported/Lock Unlock.wav-146282780a4abfd28f066f863e7d7e55.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -2,11 +2,11 @@
 
 [ext_resource type="PackedScene" uid="uid://c104fwehxlwj4" path="res://environment/rooms/room_01.tscn" id="1_a2fmt"]
 [ext_resource type="PackedScene" uid="uid://c2oj6kdl327aq" path="res://mobiles/characters/knight.tscn" id="2_p3r4y"]
-[ext_resource type="Script" path="res://mobiles/characters/character_2.gd" id="3_d0euh"]
+[ext_resource type="PackedScene" uid="uid://dlqsrrcbv4mk1" path="res://environment/doors/door.tscn" id="4_87uq6"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_d5pkc"]
-vertices = PackedVector3Array(7.5, 0.5, 2, 8, 0.75, 2, 7.5, 0.5, 1.25, 7.5, 0.5, -0.5, 7, 0.5, -0.75, -3.75, 0.5, -7.5, -6, 0.5, -7.5, -6.25, 0.5, -6.25, -3.5, 0.5, -6, 7.5, 0.5, -7.5, -2.25, 0.5, -6.25, -7.5, 0.5, -6.25, 7.25, 0.5, 7.5, -7.5, 0.5, 7.5, -2.5, 0.5, -7.5)
-polygons = [PackedInt32Array(2, 1, 0), PackedInt32Array(4, 3, 2), PackedInt32Array(4, 2, 0), PackedInt32Array(6, 5, 7), PackedInt32Array(7, 5, 8), PackedInt32Array(10, 9, 8), PackedInt32Array(8, 9, 4), PackedInt32Array(11, 7, 8), PackedInt32Array(0, 12, 4), PackedInt32Array(4, 12, 8), PackedInt32Array(8, 12, 11), PackedInt32Array(11, 12, 13), PackedInt32Array(10, 14, 9)]
+vertices = PackedVector3Array(7.5, 0.5, 2, 8, 0.75, 2, 7.5, 0.5, 1.25, 7.5, 0.5, -0.5, 7, 0.5, -0.75, -7.5, 0.5, -7.5, -7.5, 0.5, 7.5, 7.25, 0.5, 7.5, 7.5, 0.5, -7.5)
+polygons = [PackedInt32Array(2, 1, 0), PackedInt32Array(4, 3, 2), PackedInt32Array(2, 0, 4), PackedInt32Array(4, 0, 7), PackedInt32Array(4, 7, 6), PackedInt32Array(4, 6, 5), PackedInt32Array(5, 8, 4)]
 
 [node name="TestRoom" type="NavigationRegion3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, 5)
@@ -15,4 +15,6 @@ navigation_mesh = SubResource("NavigationMesh_d5pkc")
 [node name="Room01" parent="." instance=ExtResource("1_a2fmt")]
 
 [node name="Knight" parent="." instance=ExtResource("2_p3r4y")]
-script = ExtResource("3_d0euh")
+
+[node name="door" parent="." instance=ExtResource("4_87uq6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 8.5)
