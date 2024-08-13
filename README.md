@@ -15,3 +15,8 @@ The following assets were used in the making of this game.
 
 ### Environment ###
 [Dungeon Remastered](https://kaylousberg.itch.io/kaykit-dungeon-remastered) by [Kay Lousberg](https://kaylousberg.com/) ([Pateron](https://www.patreon.com/kaylousberg))
+
+## Sound ##
+
+### Sound Effects ###
+[Medieval Fantasy Sound FX Pack](https://ovanisound.com/products/medieval-fantasy-sound-fx-pack) by [Ovani Sound](https://ovanisound.com/)
